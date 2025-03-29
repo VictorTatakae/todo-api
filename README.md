@@ -24,15 +24,17 @@ A modular and clean TODO API built with **Node.js**, **TypeScript**, and **Expre
 
 ## 📁 Project Structure
 
+```text
 src/
-├── config/
+├── config/            # Configuration files (DB, env, JWT secrets, etc.)
 │   ├── db.ts
 │   ├── env.ts
 │   └── jwt.ts
-├── helpers/
+├── helpers/           # Utility functions (e.g., hashing)
 │   └── hash.ts
-├── modules/
-│   ├── auth/
-│   └── todo/
-├── app.ts
-└── server.ts
+├── modules/           # Core modules following domain boundaries
+│   ├── auth/          # Authentication logic
+│   └── todo/          # Todo management logic
+├── app.ts             # Express app setup
+└── server.ts          # Entry point to start the server
+```
